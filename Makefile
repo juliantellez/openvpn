@@ -3,7 +3,7 @@
 DOCKER_NAMESPACE=juliantellez
 DOCKER_CONTAINER_NAME=openvpn
 DOCKER_REPOSITORY=$(DOCKER_NAMESPACE)/$(DOCKER_CONTAINER_NAME)
-DOCKER_PLATFORMS=linux/amd64,linux/arm64
+DOCKER_PLATFORMS=linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
 SHA8=$(shell echo $(GITHUB_SHA) | cut -c1-8)
 
 docker-image-local:
